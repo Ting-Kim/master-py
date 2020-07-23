@@ -9,6 +9,7 @@ def searchMax2D(i, array):
     x = array[i].index(rowMax)
 
     # 중앙에서부터 시작해서 행이 모서리에 위치하였을 때는 반환.
+
     if i <= 0:
         if array[i][x] >= array[i+1][x]:
             return array[i][x]
